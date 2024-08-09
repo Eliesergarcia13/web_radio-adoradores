@@ -1,0 +1,21 @@
+<IfModule mime_module> 
+AddHandler application/x-httpd-ea-php81___lsphp .php .php8 .phtml 
+</IfModule>
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteRule ^home$ /home.php [NC,L]
+  RewriteRule ^sobre$ /sobre.php [NC,L]
+  RewriteRule ^noticias$ /noticias.php [NC,L]
+  RewriteRule ^mural$ /mural.php [NC,L]
+  RewriteRule ^programacao$ /programacao.php [NC,L]
+  RewriteRule ^eventos$ /eventos.php [NC,L]
+  RewriteRule ^fotos$ /fotos.php [NC,L]
+  RewriteRule ^videos$ /videos.php [NC,L]
+  RewriteRule ^equipe$ /equipe.php [NC,L]
+  RewriteRule ^contato$ /contato.php [NC,L]
+
+
+
+# HTID:20403087: DO NOT REMOVE OR MODIFY THIS LINE AND THE LINES BELOW
+Redirect 301 /https:/hireable-lashes.000webhostapp.com http://websemeadores.online
+# DO NOT REMOVE OR MODIFY THIS LINE AND THE LINES ABOVE HTID:20403087:
